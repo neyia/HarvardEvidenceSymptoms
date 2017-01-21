@@ -3,7 +3,9 @@
  */
 var gulp = require('gulp');
 var autoprefixer = require('gulp-autoprefixer'),
-    processhtml = require('gulp-processhtml');
+    processhtml = require('gulp-processhtml'),
+    less = require('gulp-less'),
+    path = require('path');
 
 /* HTML */
 gulp.task('html', function () {
@@ -19,11 +21,14 @@ gulp.task('js', function () {
         .pipe(gulp.dest('build/scripts/'));
 });
 /* Styles */
-gulp.task('autoprefixer', function () {
-    return gulp.src('src/styles/common.css')
+gulp.task('less', function () {
+    return gulp.src('src/styles/common.less')
+        .pipe(less({
+            paths: [ path.join('src/styles', 'less', 'includes') ]
+        }))
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(gulp.dest('build/styles/common.css'));
+        .pipe(gulp.dest('build/styles'));
 });

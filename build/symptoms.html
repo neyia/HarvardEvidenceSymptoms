@@ -3,17 +3,324 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <!-- if (Bootstrap v3.3.1) ? old general included files : ***-->
-    <!-- Latest compiled and minified CSS -->
+     <!-- if (Bootstrap v3.3.1) ? old general included files : ***-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-    <!-- Latest compiled and minified JavaScript -->
+    <script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <!--/if-->
+     <!--/if-->
 
 </head>
+
 <body>
+
+<div class="section section--symptoms">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-sm-3 col-md-2 col-lg-2 sidebar">
+
+                <div class="sidebar-line">
+
+                    <div class="page-sub-header">
+                        <h2 class="page-sub-header__title">Age:</h2>
+                    </div>
+
+                    <ul class="nav nav-sidebar sidebar-line__list">
+                        <li class="sidebar-line__item">
+                            <span class="input-group input-group-sm">
+                                <label class="sidebar-line__label">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                                        <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                                    </span>
+                                </label>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-line">
+                    <div class="page-sub-header">
+                        <h2 class="page-sub-header__title">Gender:</h2>
+                    </div>
+
+                    <ul class="nav nav-sidebar sidebar-line__list">
+                        <li class="sidebar-line__item">
+                            <label class="sidebar-line__label">
+                                <input type="radio" class="sidebar-line__input" value="male" name="gender">
+                                Male
+                            </label>
+                        </li>
+
+                        <li class="sidebar-line__item">
+                            <label class="sidebar-line__label">
+                                <input type="radio" class="sidebar-line__input" value="female" name="gender">
+                                Female
+                            </label>
+                        </li>
+
+                        <li class="sidebar-line__item">
+                            <label class="sidebar-line__label">
+                                <input type="radio" class="sidebar-line__input" value="unknown" name="gender">
+                                Unknown
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-line">
+                    <div class="page-sub-header">
+                        <h2 class="page-sub-header__title">Body Areas:</h2>
+                    </div>
+
+                    <ul class="nav nav-sidebar sidebar-line__list">
+                        <li class="sidebar-line__item">
+                            <label class="sidebar-line__label">
+                                <input type="radio" class="sidebar-line__input" value="abdomen" name="body-areas">
+                                Abdomen
+                            </label>
+                        </li>
+
+                        <li class="sidebar-line__item">
+                            <label class="sidebar-line__label">
+                                <input type="radio" class="sidebar-line__input" value="breast" name="body-areas">
+                                Breast
+                            </label>
+                        </li>
+
+                        <li class="sidebar-line__item">
+                            <label class="sidebar-line__label">
+                                <input type="radio" class="sidebar-line__input" value="cardiac" name="body-areas">
+                                Cardiac
+                            </label>
+                        </li>
+
+                        <li class="sidebar-line__item">
+                            <label class="sidebar-line__label">
+                                <input type="radio" class="sidebar-line__input" value="chest" name="body-areas">
+                                Chest
+                            </label>
+                        </li>
+
+                        <li class="sidebar-line__item">
+                            <label class="sidebar-line__label">
+                                <input type="radio" class="sidebar-line__input" value="head" name="body-areas">
+                                Head
+                            </label>
+                        </li>
+                        <li class="sidebar-line__item">
+                            <label class="sidebar-line__label">
+                                <input type="radio" class="sidebar-line__input" value="lower-extremity" name="body-areas">
+                                Lower extremity
+                            </label>
+                        </li>
+                        <li class="sidebar-line__item">
+                            <label class="sidebar-line__label">
+                                <input type="radio" class="sidebar-line__input" value="maxface" name="body-areas">
+                                Maxface
+                            </label>
+                        </li>
+                        <li class="sidebar-line__item">
+                            <label class="sidebar-line__label">
+                                <input type="radio" class="sidebar-line__input" value="neck" name="body-areas">
+                                Neck
+                            </label>
+                        </li>
+                        <li class="sidebar-line__item">
+                            <label class="sidebar-line__label">
+                                <input type="radio" class="sidebar-line__input" value="pelvis" name="body-areas">
+                                Pelvis
+                            </label>
+                        </li>
+                        <li class="sidebar-line__item">
+                            <label class="sidebar-line__label">
+                                <input type="radio" class="sidebar-line__input" value="spine" name="body-areas">
+                                Spine
+                            </label>
+                        </li>
+                        <li class="sidebar-line__item">
+                            <label class="sidebar-line__label">
+                                <input type="radio" class="sidebar-line__input" value="unspecified" name="body-areas">
+                                Unspecified
+                            </label>
+                        </li>
+                        <li class="sidebar-line__item">
+                            <label class="sidebar-line__label">
+                                <input type="radio" class="sidebar-line__input" value="upper-extremity" name="body-areas">
+                                Upper extremity
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-9 col-sm-offset-3 col-lg-8">
+
+                <div class="diagnosis">
+                    <div class="page-sub-header">
+                        <h2 class="page-sub-header__title">Symptom / Diagnosis</h2>
+                    </div>
+                    <form>
+                        <div class="search-line">
+                            <div class="input-group input-group-sm">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                                </span>
+                            </div>
+
+                        </div>
+                        <div class="search-block">
+                            <ul class="list-group search-block__list">
+                                <li class="list-group-item search-block__item">
+                                    <label class="search-block__label">
+                                        <input type="checkbox" class="search-block__input" value="generateValue1" name="generateName1">
+                                        Minor Head Trauma
+                                    </label>
+                                </li>
+                                <li class="list-group-item search-block__item">
+                                    <label class="search-block__label">
+                                        <input type="checkbox" class="search-block__input" value="generateValue2" name="generateName2">
+                                        Acute Ankle Injury
+                                    </label>
+                                </li>
+                                <li class="list-group-item search-block__item">
+                                    <label class="search-block__label">
+                                        <input type="checkbox" class="search-block__input" value="generateValue3" name="generateName3">
+                                        Pulmonary Embolism
+                                    </label>
+                                </li>
+                                <li class="list-group-item search-block__item">
+                                    <label class="search-block__label">
+                                        <input type="checkbox" class="search-block__input" value="generateValue4" name="generateName4">
+                                        Colorectal Cancer Screening
+                                    </label>
+                                </li>
+                                <li class="list-group-item search-block__item">
+                                    <label class="search-block__label">
+                                        <input type="checkbox" class="search-block__input" value="generateValue5" name="generateName5">
+                                        Acute Shoulder Pain
+                                    </label>
+                                </li>
+                                <li class="list-group-item search-block__item">
+                                    <label class="search-block__label">
+                                        <input type="checkbox" class="search-block__input" value="generateValue6" name="generateName6">
+                                        Nontraumatic Knee Pain
+                                    </label>
+                                </li>
+                                <li class="list-group-item search-block__item">
+                                    <label class="search-block__label">
+                                        <input type="checkbox" class="search-block__input" value="generateValue7" name="generateName7">
+                                        Follow-up and Retreatment of Brain Metastases
+                                    </label>
+                                </li>
+                                <li class="list-group-item search-block__item">
+                                    <label class="search-block__label">
+                                        <input type="checkbox" class="search-block__input" value="generateValue8" name="generateName8">
+                                        Chronic Dyspnea  Suspected Pulmonary Origin
+                                    </label>
+                                </li>
+                                <li class="list-group-item search-block__item">
+                                    <label class="search-block__label">
+                                        <input type="checkbox" class="search-block__input" value="generateValue9" name="generateName9">
+                                        Brain Metastasis
+                                    </label>
+                                </li>
+                                <li class="list-group-item search-block__item">
+                                    <label class="search-block__label">
+                                        <input type="checkbox" class="search-block__input" value="generateValue10" name="generateName10">
+                                        COPD with no complications
+                                    </label>
+                                </li>
+                                <li class="list-group-item search-block__item">
+                                    <label class="search-block__label">
+                                        <input type="checkbox" class="search-block__input" value="generateValue11" name="generateName11">
+                                        Detection and Risk Assessment of Coronary Artery Disease
+                                    </label>
+                                </li>
+                                <li class="list-group-item search-block__item">
+                                    <label class="search-block__label">
+                                        <input type="checkbox" class="search-block__input" value="generateValue12" name="generateName12">
+                                        Low back pain
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="rules">
+                    <div class="page-sub-header">
+                        <h2 class="page-sub-header__title">Rules</h2>
+                        <div class="button">
+                            <a href="#" class="cancel btn btn-default">evaluate</a>
+                        </div>
+                    </div>
+
+                    <form>
+
+                        <ul class="list-group rules-block__list">
+                            <li class="list-group-item rules-block__item">
+                                <span class="list-group-item-text rules-block__text">
+                                    <span class="if rules-block__text-style">IF</span>
+                                    <span class="not rules-block__text-style">NOT</span> ([LOC]
+                                    <span class="or rules-block__text-style">OR</span> [Post-Traumatic Amnesia])
+                                    <span class="and rules-block__text-style">AND</span>
+                                    <span class="not rules-block__text-style">NOT</span> ([Focal neurologic deficit]
+                                    <span class="or rules-block__text-style">OR</span> [Coagulopathy]
+                                    <span class="or rules-block__text-style">OR</span> [Vomiting]
+                                    <span class="or rules-block__text-style">OR</span> [GCS<15]
+                                    <span class="or rules-block__text-style">OR</span> [Headache]
+                                    <span class="or rules-block__text-style">OR</span> [Physical evidence of trauma above the clavicles]
+                                    <span class="or rules-block__text-style">OR</span> [Deficits in short-term memory]
+                                    <span class="or rules-block__text-style">OR</span> [Post-traumatic seizure]
+                                    <span class="or rules-block__text-style">OR</span> [Drug]
+                                    <span class="or rules-block__text-style">OR</span> [alcohol intoxication]
+                                    <span class="or rules-block__text-style">OR</span> [Trauma more than 24h ago]
+                                    <span class="or rules-block__text-style">OR</span> [Hemodynamically unstable])
+                                    <span class="and rules-block__text-style">AND</span> [Age <65]
+                                    <span class="then rules-block__text-style">THEN</span>
+                                    <span class="not rules-block__text-style">NOT</span> [CT Head]
+                                </span>
+                            </li>
+                             <li class="list-group-item rules-block__item">
+                                <span class="list-group-item-text rules-block__text">
+                                    <span class="if rules-block__text-style">IF</span> [Ankle injury <10 days]
+                                    <span class="and rules-block__text-style">AND</span>
+                                    <span class="not rules-block__text-style">NOT</span> [Ottawa Ankle Rules exclusion criteria]
+                                    <span class="not rules-block__text-style">NOT</span> ([Bone tenderness at the posterior edge]
+                                    <span class="or rules-block__text-style">OR</span> [tip of lateral malleolus]
+                                    <span class="or rules-block__text-style">OR</span> [Bone tenderness at the posterior edge]
+                                    <span class="or rules-block__text-style">OR</span> [tip of medial malleolus]
+                                    <span class="or rules-block__text-style">OR</span> [Inability to bear weight both immediately ])
+                                    <span class="and rules-block__text-style">AND</span> [in emergency department]
+                                    <span class="then rules-block__text-style">THEN</span> [Xray Ankle]
+                                </span>
+                            </li>
+                             <li class="list-group-item rules-block__item">
+                                <span class="list-group-item-text rules-block__text">
+                                    <span class="if rules-block__text-style">IF</span> [Prior Radiograph performed]
+                                    <span class="and rules-block__text-style">AND</span> [Radiograph noncontributory]
+                                    <span class="and rules-block__text-style">AND</span> ([Questionable bursitis based on clinical findings including physical examination]
+                                    <span class="or rules-block__text-style">OR</span> [Questionable long head of biceps tenosynovitis based on clinical findings including
+                                    physical examination])
+                                    <span class="then rules-block__text-style">THEN</span> [Xray bursography/tenography shoulder with
+                                    anesthetic and/or corticosteroid]
+                                </span>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
 
 </body>
 </html>
