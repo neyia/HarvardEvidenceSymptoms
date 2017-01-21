@@ -1,0 +1,23 @@
+{
+  "name": "harvard",
+  "version": "1.0.0",
+  "description": "Harvard Evidence Symptoms",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "hello"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neyia/HarvardEvidenceSymptoms.git"
+  },
+  "author": "nzhyrkova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neyia/HarvardEvidenceSymptoms/issues"
+  },
+  "homepage": "https://github.com/neyia/HarvardEvidenceSymptoms#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1"
+  }
+}
