@@ -17,10 +17,13 @@
   },
   "homepage": "https://github.com/neyia/HarvardEvidenceSymptoms#readme",
   "devDependencies": {
+    "browser-sync": "^2.18.6",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-less": "^3.3.0",
     "gulp-processhtml": "^1.1.0",
-    "path": "^0.12.7"
+    "gulp-watch": "^4.3.11",
+    "path": "^0.12.7",
+    "webserver": "^1.1.2"
   }
 }
