@@ -18,6 +18,7 @@
   "homepage": "https://github.com/neyia/HarvardEvidenceSymptoms#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1"
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-processhtml": "^1.1.0"
   }
 }
